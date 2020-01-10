@@ -2,8 +2,8 @@ from math import log
 from math import fsum
 import collections
 
-file_no_probels = open("D:/FIELS/CRYPT/LAB1/input_no_space.txt", "r", encoding='utf-8')
-file_probels = open("D:/FIELS/CRYPT/LAB1/input_wth_space.txt", "r", encoding='utf-8')
+file_no_probels = open("D:/Files/CP1/lab_no_probels.txt", "r", encoding='utf-8')
+file_probels = open("D:/Files/CP1/lab_probels.txt", "r", encoding='utf-8')
 file = open("D:/Files/CP1/Laba_1_without_entropy.txt", "w", encoding='utf-8')
 
 text_no_probels = file_no_probels.read()
