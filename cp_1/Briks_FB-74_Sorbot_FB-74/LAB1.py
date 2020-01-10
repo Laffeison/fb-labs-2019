@@ -4,8 +4,8 @@ from math import log
 alphabet_no_space = ['а','б','в','г','д','е','ё','ж','з','и','й','к','л','м','н','о','п','р','с','т','у','ф','х','ц','ч','ш','щ','ь','ъ','ы','э','ю','я']
 alphabet_wth_space = ['а','б','в','г','д','е','ё','ж','з','и','й','к','л','м','н','о','п','р','с','т','у','ф','х','ц','ч','ш','щ','ь','ъ','ы','э','ю','я',' ']
 
-input1 = open('D:/FIELS/CRYPT/LAB1/input_no_space.txt', 'r', encoding = 'utf-8')
-input2 = open('D:/FIELS/CRYPT/LAB1/input_wth_space.txt', 'r', encoding = 'utf-8') 
+input1 = open('D:/FIELS/CRYPT/LAB1/voina-i-mir_no_space.txt', 'r', encoding = 'utf-8')
+input2 = open('D:/FIELS/CRYPT/LAB1/voina-i-mir_wth_space.txt', 'r', encoding = 'utf-8') 
 a = input2.read()
 c = input1.read()
 
