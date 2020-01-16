@@ -139,7 +139,7 @@ def delta(mass1, mass2):
 	return delta_mass
 
 #print(delta(X, XX))
-print(delta(Y, YY))
+#print(delta(Y, YY))
 #print('')
 
 deltaX = delta(X, XX)
