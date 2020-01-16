@@ -139,7 +139,7 @@ def delta(mass1, mass2):
 	return delta_mass
 
 #print(delta(X, XX))
-#print(delta(Y, YY))
+print(delta(Y, YY))
 #print('')
 
 deltaX = delta(X, XX)
@@ -186,6 +186,7 @@ def gcd_el(element):
 
 def a_count(mass1, mass2):
 	a_mass = []
+	#a0_mass = []
 	for i in range(0, len(mass1)):
 		for j in range(0, len(mass2)):
 			g1 = gcd_el(mass2[j])
@@ -198,7 +199,10 @@ def a_count(mass1, mass2):
 				gcd_k = []
 				for k in range(0, g1 - 1):
 					gcd_k.append(k)
-					a = (mass2[j] * gcd_k[k] + g2) % 961
+					n = 961 / g1
+					a0 = ((mass2[j] / g1) * inverse(gcd_k[k], n)) % (n)
+					#a0_mass.append(a0)
+					a = a0 + (961 * gcd_k[k])
 					a_mass.append(a)
 					k += 1
 			elif g1 > 1 and g2.is_integer() == False:
